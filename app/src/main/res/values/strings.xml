@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">KotlinMvvm</string>
+    <string name="title_activity_animal">AnimalActivity</string>
+</resources>
