@@ -1,6 +1,8 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
 android {
     compileSdkVersion 28
     defaultConfig {
@@ -43,10 +45,8 @@ dependencies {
     //lifecycle
     implementation 'android.arch.lifecycle:extensions:1.1.1'
     //data
-    kapt "com.android.databinding:compiler:3.1.4"
+    annotationProcessor "com.android.databinding:compiler:3.1.4"
 }
 repositories {
     mavenCentral()
 }
-
-apply plugin: 'kotlin-android-extensions'
